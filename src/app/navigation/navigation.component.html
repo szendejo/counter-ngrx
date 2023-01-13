@@ -1,0 +1,26 @@
+<nav>
+  <a class="button"
+       routerLink=""
+       routerLinkActive="activebutton"
+       ariaCurrentWhenActive="page">
+      Home
+    </a> |  
+  <a class="button"
+       routerLink="/register"
+       routerLinkActive="activebutton"
+       ariaCurrentWhenActive="page">
+      Register
+    </a> |
+    <a class="button"
+       routerLink="/login"
+       routerLinkActive="activebutton"
+       ariaCurrentWhenActive="page">
+      Login
+    </a> |
+    <a href=""
+       (click)="logout()">
+      Logout
+    </a>
+</nav>
+
+<div>IsLoggedIn: {{ isLoggedIn$ | async }}</div>
